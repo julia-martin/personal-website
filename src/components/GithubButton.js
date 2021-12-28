@@ -14,7 +14,7 @@ const GithubButton = ({ githubLink }) => {
 };
 
 const IconWrapper = styled.figure`
-  display: flex;
+  display: inline-flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
