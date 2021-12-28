@@ -23,6 +23,8 @@ const EmailBtn = styled.button`
   margin: 0 auto;
   padding: 0;
   box-shadow: 2px 3px 5px hsl(0deg 0% 0% / 0.7);
+  transform-style: preserve-3d;
+  perspective: 1000000px;
 
   &:hover {
     cursor: pointer;
@@ -47,6 +49,11 @@ const Envelope = styled.div`
     top: 0px;
     left: 8px;
   }
+
+  ${EmailBtn}:hover & {
+    transform: rotateX(180deg) translateY(100%);
+    transition: transform 100ms;
+  }
 `;
 
 const Email = styled.p`
@@ -54,6 +61,10 @@ const Email = styled.p`
   position: absolute;
   top: 10px;
   left: 80px;
+
+  ${EmailBtn}:hover & {
+    color: ${COLORS.offwhite};
+  }
 `;
 
 export default MailButton;
