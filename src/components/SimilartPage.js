@@ -23,7 +23,7 @@ const SimilartPage = () => {
       <Section>
         <Heading>Team</Heading>
         <Paragraph>
-          This was a group project with 4 friends who were taking a Data	&amp; Visual Analytics course with me. My teammates' responsibilities included DevOps, machine learning modeling, data cleaning, and project management, while I got to do the web development aspects: design and implement the <b>frontend interfaces</b> and write the <b>backend logic</b>. I also helped <b>integrate</b> and <b>optimize</b> my teammates' code.
+          This was a group project with 4 friends who were taking a Data	&amp; Visual Analytics course with me. My teammates' responsibilities included DevOps, machine learning modeling, data cleaning, and project management, while I had the opportunity to find a data source, fetch and save the data, and work on the web development aspects: design and implement the <b>frontend interfaces</b> and write the <b>backend logic</b>. I also helped <b>integrate</b> and <b>optimize</b> my teammates' code.
         </Paragraph>
       </Section>
       <VidContainer style={{float: "right"}}>
@@ -37,7 +37,7 @@ const SimilartPage = () => {
         </Paragraph>
       </Section>
       <Section style={{ textAlign: "right", float: "right" }}>
-        <Heading>Stack</Heading>
+        <Heading>Tech Stack</Heading>
         <Paragraph>
           We decided to use Flask as our framework, since most teammates only knew Python. We also opted to build the frontend as a traditional web application rather than a SPA, since there are two distinct pages. The force-directed graph was built with the library D3.js.<br/>Although we were originally planning to deploy the app so that it could be easily accessed on the web, we ran into size limitations due to the amount of data needed by the ML model, which made it difficult to deploy freely. However, you can see the <b>features demoed</b> in the videos on this page.
         </Paragraph>

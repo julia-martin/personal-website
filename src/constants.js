@@ -38,7 +38,7 @@ export const ANIMATIONS = {
   `,
   slideFromRight: keyframes`
     from {
-      transform: translateX(20%);
+      transform: translateX(10%);
       opacity: 0%;
     }
     to {
@@ -60,6 +60,14 @@ export const ANIMATIONS = {
     }
     to {
       letter-spacing: 3rem;
+    }
+  `,
+  wave: keyframes`
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(30deg);
     }
   `
 };

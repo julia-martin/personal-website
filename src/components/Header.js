@@ -1,6 +1,6 @@
 import React from 'react';
-import styled, { keyframes } from 'styled-components/macro';
-import { COLORS, FONTS } from '../constants.js';
+import styled from 'styled-components/macro';
+import { COLORS, FONTS, ANIMATIONS } from '../constants.js';
 
 const Header = () => {
   return (
@@ -22,6 +22,10 @@ const Wrapper = styled.div`
 
 const NameArea = styled.div`
   display: inline-block;
+
+  @media (prefers-reduced-motion: no-preference) {
+    will-change: transform;
+    animation: ${ANIMATIONS.slideFromLeft} ease-out 500ms both;
 `;
 
 const Name = styled.h1`
@@ -44,15 +48,6 @@ const Name = styled.h1`
   }
 `;
 
-const wave = keyframes`
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(30deg);
-  }
-`;
-
 const WaveEmoji = styled.span`
   display: none;
   font-size: 2rem;
@@ -61,8 +56,7 @@ const WaveEmoji = styled.span`
     display: inline-block;
     will-change: transform;
     transform-origin: 75% 80%;
-    /* transform: translateX(10px); */
-    animation: ${wave} 1000ms infinite alternate ease-in-out;
+    animation: ${ANIMATIONS.wave} 1000ms infinite alternate ease-in-out;
   }
 `;
 

@@ -33,7 +33,8 @@ const Intro = styled.h2`
   position: relative;
 
   @media (prefers-reduced-motion: no-preference) {
-    animation: ${ANIMATIONS.slideFromLeft} ease-out 500ms;
+    animation: ${ANIMATIONS.slideFromLeft} ease-out 500ms both;
+    animation-delay: 250ms;
   }
 `;
 

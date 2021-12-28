@@ -22,6 +22,7 @@ const SectionWrapper = styled.section`
 const Heading = styled.h2`
   color: ${COLORS.offwhite};
   font-family: ${FONTS.strong};
+  font-weight: 300;
   letter-spacing: 0.4rem;
   text-align: center;
   padding: 5px 10px;

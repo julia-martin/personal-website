@@ -25,7 +25,6 @@ const CircleDiv = styled.div`
   height: var(--width);
   width: var(--width);
   text-align: center;
-  filter: drop-shadow(0px 1px 2px hsl(0deg 0% 0% / 0.25));
   transform: translateY(var(--translateY));
   transform-style: preserve-3d;
   perspective: 200px;

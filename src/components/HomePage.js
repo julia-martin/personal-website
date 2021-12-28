@@ -5,7 +5,7 @@ import Hero from "./Hero";
 import Section from "./Section";
 import Technologies from "./Technologies";
 import ProjectSummary from "./ProjectSummary";
-import { COLORS } from '../constants.js';
+import MailButton from './MailButton';
 
 const HomePage = () => {
   return (
@@ -18,12 +18,12 @@ const HomePage = () => {
         <ProjectSummary
           title="Coming Soon"
           pageUrl="/"
-          logo=""
+          logo="assets/coming-soon.png"
           githubLink=""
           stack={[]}
         >
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-          </p>
+          <SectionText>Stay tuned for my next project for Spring 2022!
+          </SectionText>
         </ProjectSummary>
         <ProjectSummary
           title="Similart"
@@ -32,37 +32,37 @@ const HomePage = () => {
           githubLink="https://github.com/julia-martin/similart"
           stack={["Flask", "Python", "JavaScript", "D3.js"]}
         >
-          <p>An innovative machine learning art recommendation app that uses a force-directed graph to display recommended and related artworks to the user. It flexibly allows the user to get recommendations in different ways: submit their own image, select a favorite artwork from a curated list, or answer a short quiz.
-          </p>
+          <SectionText>An innovative machine learning art recommendation app that uses a force-directed graph to display recommended and related artworks to the user. It flexibly allows the user to get recommendations in different ways: submit their own image, select a favorite artwork from a curated list, or answer a short quiz.
+          </SectionText>
         </ProjectSummary>
       </Section>
-      <Section id="about" title="About Me" colorTheme="light">
+      <Section id="about" title="About Me">
         <SectionText>
           I didn't always know I wanted to be a software developer. Before I
-          discovered my love for coding, I worked in e-commerce and then did
-          data science / data analytics at Yelp and Facebook. After some time I realized I didn't have much interest in data science. I quit my job at
-          Facebook to study software engineering full-time, and I am so much
-          happier now. I love the thrill of solving puzzles and creating
-          programs that others can use, and I love the visual aspect of front-end
+          discovered coding, I worked in e-commerce and then did <b>data science / data analytics</b> at <b>Yelp</b> and <b>Facebook</b>. After some time I realized I didn't have much interest in data science, but when I taught myself Python I realized <b>I love coding</b>. I quit my job at Facebook to study software engineering full-time, and I am so much happier now. I'm addicted to the thrill of solving puzzles and creating
+          programs that others can use, and I love the <b>visual</b> aspect of front-end
           development.
         </SectionText>
         <SectionText>
-          I currently reside in Seattle. I enjoy travel, animals,
-          arts and culture, and learning languages.
+          My first professional experience as a <b>software engineer</b> was at a tech startup called <b>Poindexter</b>, where I did a 2-month contract to build the frontend of their new spreadsheets product with React and Ruby on Rails. I learned so much from my time there, like collaborating with teamates with a 14-hour timezone difference and keeping up with changes in a <b>fast-paced startup environment</b>. Now I'm working on another project, and currently on the lookout for a new opportunity where I'd get to do full-stack software engineering at a forward-thinking tech company.
+        </SectionText>
+        <SectionText>
+          Though I've lived in a few different cities in the past few years, I currently reside in <b>Seattle</b>. I enjoy travel, animals (particularly my pet parrot), arts and culture, learning languages, and health and fitness.
         </SectionText>
       </Section>
       <Section id="contact" title="Say Hello">
-        <SectionText>
-          I would love to hear from you! You can contact me at juliadmartin720@gmail.com.
+        <SectionText style={{textAlign: "center"}}>
+          Have a question, comment, or just wanted to say hi? I'd love to hear from you!
         </SectionText>
+      <MailButton email="juliadmartin720@gmail.com" />
       </Section>
     </Layout>
   );
 };
 
 const SectionText = styled.p`
-  max-width: 800px;
-  margin: 0 auto;
+  max-width: 60ch;
+  margin: 30px auto 10px;
 `;
 
 export default HomePage;

@@ -34,6 +34,10 @@ a {
   color: hsl(60, 10%, 95%);
 }
 
+a:hover {
+  color: #FF8E83;
+}
+
 p {
   line-height: 2rem;
 }

@@ -25,7 +25,7 @@ const NavList = styled.ul`
   @media (prefers-reduced-motion: no-preference) {
     will-change: transform;
     animation: ${ANIMATIONS.slideFromRight} ease-out 500ms both;
-    animation-delay: 200ms;
+    animation-delay: 400ms;
   }
 `;
 
@@ -34,11 +34,12 @@ const NavItem = styled.li`
   font-size: 1.5rem;
   padding: 10px 20px;
   margin-top: 50px;
+  border: 1px solid transparent;
 
   &:hover {
-    background-color: ${COLORS.offwhite};
+    border: 1px solid ${COLORS.offwhite};
     border-radius: 8px;
-    color: ${COLORS.palette['500']};
+    color: ${COLORS.offwhite};
   }
 
   @media (max-width: 550px) {

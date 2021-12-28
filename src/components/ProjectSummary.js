@@ -40,7 +40,7 @@ const ProjectTitle = styled.a`
   letter-spacing: 0.3rem;
   color: ${COLORS.offwhite};
   text-transform: uppercase;
-  padding: 8px;
+  padding: 8px 0px;
 
   &:hover {
     background-color: ${COLORS.offwhite};
