@@ -22,6 +22,8 @@ const EmailBtn = styled.button`
   position: relative;
   margin: 0 auto;
   padding: 0;
+  box-shadow: 2px 3px 5px hsl(0deg 0% 0% / 0.7);
+
   &:hover {
     cursor: pointer;
   }
