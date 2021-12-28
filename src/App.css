@@ -1,38 +1,45 @@
-.App {
-  text-align: center;
+/*
+Color palette
+-------------
+  offwhite: "hsl(60, 10%, 95%)", // #f4f4f1
+  offwhiteTransparent: "hsla(60, 10%, 95%, 75%)",
+  primary: "#BE007C", //	hsl(321, 100%, 37%)
+  primaryDark: "hsl(321, 100%, 18%)",
+  golden: "ffb56b",
+  dark: "#1C1F31", //	hsl(231, 27%, 15%)
+  darkBlue: "#2d3159",
+  palette: {
+    50: "FF8E83",
+    100: "#ff6f61",
+    200: "#f45666",
+    300: "#e63d6c",
+    400: "#d42274",
+    500: "#be007c"
+  }
+*/
+body {
+  --offwhite: hsl(60, 10%, 95%);
+  --darkBlue: #2d3159;
+  background-color: var(--darkBlue);
+  color: var(--offwhite);
+  font-family: 'Spartan', sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+b {
+  color: #FF8E83;
+}
+
+a {
+  text-decoration: none;
+  color: hsl(60, 10%, 95%);
+}
+
+p {
+  line-height: 2rem;
 }
 
 @media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+  html {
+    scroll-behavior: smooth;
   }
 }
