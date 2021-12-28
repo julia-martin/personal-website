@@ -5,7 +5,7 @@ import Navbar from './Navbar';
 
 const Hero = () => {
   return (
-    <Wrapper>
+    <Wrapper id="top">
       <Intro>
         <GlowBackground />
         Hi there! I'm a full-stack software engineer who's deeply passionate about building great products.

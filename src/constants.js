@@ -26,6 +26,14 @@ export const FONTS = {
 };
 
 export const ANIMATIONS = {
+  fadeIn: keyframes`
+    from {
+      opacity: 0%;
+    }
+    to {
+      opacity: 100%;
+    }
+  `,
   slideFromLeft: keyframes`
     from {
       transform: translateX(-20%);
