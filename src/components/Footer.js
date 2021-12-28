@@ -36,6 +36,10 @@ const Link = styled.a`
   display: inline-block;
   padding: 0px 10px;
   margin: 0px 10px;
+
+  &:hover {
+    color: ${COLORS.offwhite};
+  }
 `;
 
 export default Footer;
