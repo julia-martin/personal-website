@@ -10,6 +10,9 @@ const SimilartPage = () => {
       <Logo src="assets/similart/Similart_logo.png" alt="Similart logo" />
       <Title>Similart</Title>
       <Subtitle>Ultra-innovative <b>art recommender</b> app using a <b>unique combination</b> of machine learning and data processing to generate recommendations and similar artworks. Built with Flask (Python) and D3.js</Subtitle>
+      <GithubWrapper>
+        <GithubButton githubLink="https://github.com/julia-martin/similart" />
+      </GithubWrapper>
       <ImgsContainer>
         <ImgWrapper>
           <img src="assets/similart/Similart_top.jpg" alt="Top of Similart homepage" />
@@ -56,9 +59,6 @@ const SimilartPage = () => {
         <Video controls src="assets/similart/Similart_option3_demo.mov" width={800} height={350}></Video>
         <Figcaption>Demo: Take short quiz</Figcaption>
       </VidContainer>
-      <GithubWrapper>
-        <GithubButton githubLink="https://github.com/julia-martin/similart" />
-      </GithubWrapper>
     </Layout>
   );
 };
@@ -162,6 +162,8 @@ const Video = styled.video`
 
 const GithubWrapper = styled.div`
   padding: 20px;
+  display: flex;
+  justify-content: center;
 `;
 
 export default SimilartPage;
