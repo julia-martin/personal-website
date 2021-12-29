@@ -23,42 +23,50 @@ const SimilartPage = () => {
           <Figcaption>Output of recommendations and similar artworks</Figcaption>
         </ImgWrapper>
       </ImgsContainer>
-      <Section>
-        <Heading>Team</Heading>
-        <Paragraph>
-          This was a group project with 4 friends who were taking a Data	&amp; Visual Analytics course with me. My teammates' responsibilities included DevOps, machine learning modeling, data cleaning, and project management, while I had the opportunity to find a data source, fetch and save the data, and work on the web development aspects: design and implement the <b>frontend interfaces</b> and write the <b>backend logic</b>. I also helped <b>integrate</b> and <b>optimize</b> my teammates' code.
-        </Paragraph>
-      </Section>
-      <VidContainer style={{float: "right"}}>
-        <Video controls src="assets/similart/Similart_option1_demo.mov" width={800} height={350}></Video>
-        <Figcaption>Demo: Upload own image</Figcaption>
-      </VidContainer>
-      <Section>
-        <Heading>Purpose</Heading>
-        <Paragraph>
-          The purpose of this app is to make the discovery of art <b>fun, thought-provoking, and accessible to everyone</b>. Many people have had limited exposure to art due to the costly nature of museums and art education. By providing <b>multiple easy ways</b> to get recommendations, we hope this can allow art to be enjoyed by anyone, <b>no art knowledge required.</b>.
-        </Paragraph>
-      </Section>
-      <Section style={{ textAlign: "right", float: "right" }}>
-        <Heading>Tech Stack</Heading>
-        <Paragraph>
-          We decided to use Flask as our framework, since most teammates only knew Python. We also opted to build the frontend as a traditional web application rather than a SPA, since there are two distinct pages. The force-directed graph was built with the library D3.js.<br/>Although we were originally planning to deploy the app so that it could be easily accessed on the web, we ran into size limitations due to the amount of data needed by the ML model, which made it difficult to deploy freely. However, you can see the <b>features demoed</b> in the videos on this page.
-        </Paragraph>
-      </Section>
-      <VidContainer>
-        <Video controls src="assets/similart/Similart_option2_demo.mov" width={800} height={350}></Video>
-        <Figcaption>Demo: Choose favorite from selection</Figcaption>
-      </VidContainer>
-      <Section style={{textAlign: "right", float: "right"}}>
-        <Heading>Learnings</Heading>
-        <Paragraph>
-          I learned a lot about <b>effective teamwork</b> from this project, given that the team was made up of very diverse skillsets, most of whom had no prior web development experience. <b>Giving feedback</b> on others' code and negotiating the <b>scope</b> of the project was a challenge that I'm grateful I got to experience and grow from.
-        </Paragraph>
-      </Section>
-      <VidContainer style={{margin: "20px auto", textAlign: "center"}}>
-        <Video controls src="assets/similart/Similart_option3_demo.mov" width={800} height={350}></Video>
-        <Figcaption>Demo: Take short quiz</Figcaption>
-      </VidContainer>
+      <Content>
+        <Section style={{ alignSelf: "flex-start" }}>
+          <Heading>Team</Heading>
+          <Paragraph>
+            This was a group project with 4 friends who were taking a Data	&amp; Visual Analytics course with me. My teammates' responsibilities included DevOps, machine learning modeling, data cleaning, and project management, while I had the opportunity to find a data source, fetch and save the data, and work on the web development aspects: design and implement the <b>frontend interfaces</b> and write the <b>backend logic</b>. I also helped <b>integrate</b> and <b>optimize</b> my teammates' code.
+          </Paragraph>
+        </Section>
+        <VidContainer>
+          <Video controls src="assets/similart/Similart_option1_demo.mov" width={800} height={350}></Video>
+          <Figcaption>Demo: Upload own image</Figcaption>
+        </VidContainer>
+        <Section style={{ alignSelf: "flex-end", textAlign: "right" }}>
+          <Heading>Purpose</Heading>
+          <Paragraph>
+            The purpose of this app is to make the discovery of art <b>fun, thought-provoking, and accessible to everyone</b>. Many people have had limited exposure to art due to the costly nature of museums and art education. By providing <b>multiple easy ways</b> to get recommendations, we hope this can allow art to be enjoyed by anyone, <b>no art knowledge required.</b>.
+          </Paragraph>
+        </Section>
+        <VidContainer>
+          <Video controls src="assets/similart/Similart_option2_demo.mov" width={800} height={350}></Video>
+          <Figcaption>Demo: Choose favorite from selection</Figcaption>
+        </VidContainer>
+        <Section style={{ alignSelf: "flex-start" }}>
+          <Heading>Tech Stack</Heading>
+          <Paragraph>
+            We decided to use Flask as our framework, since most teammates only knew Python. We also opted to build the frontend as a traditional web application rather than a SPA, since there are two distinct pages. The force-directed graph was built with the library D3.js.<br/>Although we were originally planning to deploy the app so that it could be easily accessed on the web, we ran into size limitations due to the amount of data needed by the ML model, which made it difficult to deploy freely. However, you can see the <b>features demoed</b> in the videos on this page.
+          </Paragraph>
+        </Section>
+        <Section style={{ alignSelf: "flex-end", textAlign: "right" }}>
+          <Heading>How it Works</Heading>
+          <Paragraph>
+            For data we used about 3000 painting images, which we saved as 3-dimensional Numpy arrays. For the ML model we researched a few different options, then settled on a combination of <b>PCA</b> (Principal Component Analysis, a dimensionality reduction technique) and <b>KNN</b> (K-Nearest Neighbors, a classification algorithm), using Euclidean distance to determine similarity. The quiz, on the other hand, used a text-matching algorithm based on the painting metadata. To learn more about the machine learning model and algorithms, see the <b><a href="https://github.com/julia-martin/similart">README</a></b>.
+          </Paragraph>
+        </Section>
+        <VidContainer>
+          <Video controls src="assets/similart/Similart_option3_demo.mov" width={800} height={350}></Video>
+          <Figcaption>Demo: Take short quiz</Figcaption>
+        </VidContainer>
+        <Section style={{ textAlign: "center" }}>
+          <Heading>Learnings</Heading>
+          <Paragraph>
+            I learned a lot about <b>effective teamwork</b> from this project, given that the team was made up of very diverse skillsets, most of whom had no prior web development experience. <b>Giving feedback</b> on others' code and negotiating the <b>scope</b> of the project was a challenge that I'm grateful I got to experience and grow from.
+          </Paragraph>
+        </Section>
+      </Content>
     </Layout>
   );
 };
@@ -116,6 +124,13 @@ const Subtitle = styled.p`
   max-width: 800px;
   padding: 0 50px;
   margin: 0 auto;
+`;
+
+const Content = styled.article`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 `;
 
 const Section = styled.section`
