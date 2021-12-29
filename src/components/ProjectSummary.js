@@ -4,7 +4,7 @@ import { COLORS, GRADIENT, FONTS } from '../constants.js';
 import ButtonLink from './ButtonLink';
 import GithubButton from './GithubButton';
 
-const ProjectSummary = ({ title, pageUrl, logo, githubLink, showGithub, stack, children }) => {
+const ProjectSummary = ({ title, pageUrl, logo, githubLink, isComplete, stack, children }) => {
   return (
     <Wrapper>
       <h2>
@@ -13,7 +13,7 @@ const ProjectSummary = ({ title, pageUrl, logo, githubLink, showGithub, stack, c
       <FlexContainer>
         <div>
           {children}
-          <ButtonLink href={pageUrl} text="See details" />
+          {isComplete && <ButtonLink href={pageUrl} text="See details" />}
         </div>
         <Logo src={logo} alt={`${title} logo`}/>
       </FlexContainer>
@@ -21,7 +21,7 @@ const ProjectSummary = ({ title, pageUrl, logo, githubLink, showGithub, stack, c
         <StackSection>
           {stack.map((elem, idx) => <StackItem key={`tool-${idx}`}>{elem}</StackItem>)}
         </StackSection>
-        {showGithub && <GithubButton githubLink={githubLink} />}
+        {isComplete && <GithubButton githubLink={githubLink} />}
       </FlexContainer>
     </Wrapper>
   );

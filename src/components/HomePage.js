@@ -31,7 +31,7 @@ const HomePage = () => {
           pageUrl="/"
           logo="assets/coming-soon.png"
           githubLink=""
-          showGithub={false}
+          isComplete={false}
           stack={[]}
         >
           <SectionText>Stay tuned for my next project for Spring 2022!
@@ -42,7 +42,7 @@ const HomePage = () => {
           pageUrl="/similart"
           logo="assets/similart/Similart_logo.png"
           githubLink="https://github.com/julia-martin/similart"
-          showGithub={true}
+          isComplete={true}
           stack={["Flask", "Python", "JavaScript", "D3.js"]}
         >
           <SectionText>An innovative machine learning art recommendation app that uses a force-directed graph to display recommended and related artworks to the user. It flexibly allows the user to get recommendations in different ways: submit their own image, select a favorite artwork from a curated list, or answer a short quiz.
