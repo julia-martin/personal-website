@@ -62,14 +62,6 @@ export const ANIMATIONS = {
       transform: translateY(0%);
     }
   `,
-  spaceOut: keyframes`
-    from {
-      letter-spacing: 0.3rem;
-    }
-    to {
-      letter-spacing: 3rem;
-    }
-  `,
   wave: keyframes`
     from {
       transform: rotate(0deg);

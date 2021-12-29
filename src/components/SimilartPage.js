@@ -104,10 +104,6 @@ const Title = styled.h1`
   @media (prefers-reduced-motion: no-preference) {
     will-change: transform;
     animation: ${ANIMATIONS.slideDown} 700ms both;
-
-    &:hover {
-      animation: ${ANIMATIONS.spaceOut} 500ms 2 alternate;
-    }
   }
 
   @media (max-width: 550px) {
