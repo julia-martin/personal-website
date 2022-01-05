@@ -22,6 +22,10 @@ const Wrapper = styled.header`
   overflow: hidden;
   background-image: url("/assets/deco/layered-waves-haikei.png");
   background-size: cover;
+
+  @media (max-width: 360px) {
+    padding-top: 40px;
+  }
 `;
 
 const Intro = styled.h2`
@@ -35,6 +39,10 @@ const Intro = styled.h2`
   @media (prefers-reduced-motion: no-preference) {
     animation: ${ANIMATIONS.slideFromLeft} ease-out 500ms both;
     animation-delay: 250ms;
+  }
+
+  @media (max-width: 360px) {
+    font-size: 1.25em;
   }
 `;
 
