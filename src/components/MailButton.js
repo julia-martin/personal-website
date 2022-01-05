@@ -58,6 +58,7 @@ const Envelope = styled.div`
 `;
 
 const Email = styled.p`
+  background-color: hsla(321deg 0% 90% / 70%);
   color: ${COLORS.darkBlue};
   position: absolute;
   top: 10px;

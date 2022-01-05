@@ -29,6 +29,13 @@ const CircleDiv = styled.div`
   transform-style: preserve-3d;
   perspective: 200px;
   will-change: transform;
+
+  @media (max-width: 550px) {
+    margin: 10px 5px;
+  }
+  @media (max-width: 460px) {
+    transform: translateY(0);
+  }
 `;
 
 const FrontSide = styled.div`
