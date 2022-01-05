@@ -2,9 +2,9 @@ import React from 'react';
 import styled from 'styled-components/macro';
 import { COLORS, FONTS, ANIMATIONS } from '../constants.js';
 
-const Header = () => {
+const Header = ({ atTop }) => {
   return (
-    <Wrapper>
+    <Wrapper background={atTop ? "transparent" : "#2d3159"}>
       <NameArea>
         <a href="/"><Name>Julia Martin</Name></a>
         <WaveEmoji role="img" aria-label="Waving hand">👋</WaveEmoji>
@@ -14,9 +14,11 @@ const Header = () => {
 };
 
 const Wrapper = styled.div`
+  background-color: ${props => props.background};
   position: fixed;
   top: 0;
   left: 0;
+  width: 100%;
   z-index: 1;
 `;
 

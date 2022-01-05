@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import styled from "styled-components/macro";
 import Layout from './Layout';
 import Hero from "./Hero";
@@ -8,19 +8,9 @@ import ProjectSummary from "./ProjectSummary";
 import MailButton from './MailButton';
 import ScrollUpBtn from './ScrollUpBtn';
 
-const HomePage = () => {
-  const [arrowDisplay, setArrowDisplay] = useState('none');
-
-  document.addEventListener('scroll', function(e) {
-    if (window.scrollY === 0) {
-      setArrowDisplay('none');
-    } else {
-      setArrowDisplay('block');
-    }
-  });
-
+const HomePage = ({ atTop }) => {
   return (
-    <Layout>
+    <Layout atTop={atTop}>
       <Hero />
       <Section id="skills" title="Current Skills">
         <Technologies />
@@ -69,7 +59,7 @@ const HomePage = () => {
         </SectionText>
       <MailButton email="juliadmartin720@gmail.com" />
       </Section>
-      <ScrollUpBtn display={arrowDisplay}/>
+      <ScrollUpBtn display={atTop ? "none" : "block"}/>
     </Layout>
   );
 };
