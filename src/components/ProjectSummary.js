@@ -63,11 +63,15 @@ const FlexContainer = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
+  flex-wrap: wrap;
+  max-width: 100vw;
+  overflow: auto;
 `;
 
 const StackSection = styled.div`
   display: flex;
   justify-content: flex-start;
+  flex-wrap: wrap;
 `;
 
 const StackItem = styled.div`

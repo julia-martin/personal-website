@@ -19,6 +19,7 @@ const EmailBtn = styled.button`
   display: block;
   height: 150px;
   width: 400px;
+  max-width: 100%;
   position: relative;
   margin: 0 auto;
   padding: 0;
@@ -60,7 +61,8 @@ const Email = styled.p`
   color: ${COLORS.darkBlue};
   position: absolute;
   top: 10px;
-  left: 80px;
+  left: 0;
+  right: 0;
 
   ${EmailBtn}:hover & {
     color: ${COLORS.offwhite};

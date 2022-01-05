@@ -47,3 +47,9 @@ p {
     scroll-behavior: smooth;
   }
 }
+
+@media (pointer: coarse) {
+  html {
+    --min-tap-height: 44px;
+  }
+}

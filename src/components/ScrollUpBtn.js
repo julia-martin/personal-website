@@ -16,8 +16,12 @@ const ScrollUpBtn = ({ display }) => {
 
 const Anchor = styled.a`
   position: fixed;
-  bottom: 75px;
+  bottom: 80px;
   right: 20px;
+
+  @media (max-width: 460px) {
+    bottom: 130px;
+  }
 
   @media (prefers-reduced-motion: no-preference) {
     animation: ${ANIMATIONS.fadeIn} 700ms both;

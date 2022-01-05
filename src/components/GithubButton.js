@@ -18,6 +18,8 @@ const IconWrapper = styled.figure`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  min-width: 44px;
+  min-height: 44px;
 `;
 
 const Icon = styled.img`

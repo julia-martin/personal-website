@@ -6,11 +6,11 @@ import GithubButton from './GithubButton';
 const Footer = () => {
   return (
     <FooterWrapper>
-      <p>Designed and built by Julia Martin</p>
+      <FooterText>Designed and built by Julia Martin</FooterText>
       <GithubButton githubLink="https://github.com/julia-martin/personal-website" />
       <SiteLinks>
-        <Link href="https://github.com/julia-martin">github</Link>
-        <Link href="https://www.linkedin.com/in/juliadmartin/">linkedin</Link>
+        <Item><Link href="https://github.com/julia-martin">github</Link></Item>
+        <Item><Link href="https://www.linkedin.com/in/juliadmartin/">linkedin</Link></Item>
       </SiteLinks>
     </FooterWrapper>
   );
@@ -26,19 +26,33 @@ const FooterWrapper = styled.footer`
   align-items: center;
 `;
 
-const SiteLinks = styled.li`
+const FooterText = styled.p`
+  line-height: 1.5rem;
+  @media (max-width: 540px) {
+    font-size: 0.8rem;
+  }
+`;
+
+const SiteLinks = styled.ul`
   list-style-type: none;
   font-weight: bold;
 `;
 
-const Link = styled.a`
-  color: ${COLORS.darkBlue};
+const Item = styled.li`
   display: inline-block;
-  padding: 0px 10px;
   margin: 0px 10px;
 
+  @media (pointer: coarse) {
+    min-height: var(--min-tap-height);
+    line-height: var(--min-tap-height);
+  }
+`;
+
+const Link = styled.a`
+  color: ${COLORS.offwhite};
+
   &:hover {
-    color: ${COLORS.offwhite};
+    color: ${COLORS.darkBlue};
   }
 `;
 
