@@ -37,6 +37,7 @@ const Wrapper = styled.article`
 
 const ProjectTitle = styled.a`
   font-family: ${FONTS.normal};
+  font-size: ${20/16}rem;
   letter-spacing: 0.3rem;
   color: ${COLORS.offwhite};
   text-transform: uppercase;
