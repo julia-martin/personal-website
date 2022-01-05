@@ -5,23 +5,22 @@ import ButtonLink from './ButtonLink';
 import GithubButton from './GithubButton';
 
 const ProjectSummary = ({ title, pageUrl, logo, githubLink, isComplete, stack, children }) => {
+  console.log(stack);
   return (
     <Wrapper>
       <h2>
         <ProjectTitle href={pageUrl}>{title}</ProjectTitle>
+        <Logo src={logo} alt={`${title} logo`} />
       </h2>
+      <div>
+        {children}
+        {isComplete && <ButtonLink href={pageUrl} text="See details" />}
+      </div>
       <FlexContainer>
-        <div>
-          {children}
-          {isComplete && <ButtonLink href={pageUrl} text="See details" />}
-        </div>
-        <Logo src={logo} alt={`${title} logo`}/>
-      </FlexContainer>
-      <FlexContainer>
+        {isComplete && <GithubButton githubLink={githubLink} />}
         <StackSection>
           {stack.map((elem, idx) => <StackItem key={`tool-${idx}`}>{elem}</StackItem>)}
         </StackSection>
-        {isComplete && <GithubButton githubLink={githubLink} />}
       </FlexContainer>
     </Wrapper>
   );
@@ -61,6 +60,7 @@ const Logo = styled.img`
 
 const FlexContainer = styled.div`
   display: flex;
+  flex-direction: row-reverse;
   justify-content: space-between;
   align-items: flex-start;
   flex-wrap: wrap;
@@ -70,7 +70,7 @@ const FlexContainer = styled.div`
 
 const StackSection = styled.div`
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   flex-wrap: wrap;
 `;
 
@@ -81,7 +81,7 @@ const StackItem = styled.div`
   border-top-right-radius: 99999px;
   color: ${COLORS.palette['100']};
   padding: 16px 16px 4px;
-  margin: 0 20px;
+  margin: 5px 20px;
   text-align: center;
 `;
 

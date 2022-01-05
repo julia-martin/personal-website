@@ -36,6 +36,7 @@ const FooterText = styled.p`
 const SiteLinks = styled.ul`
   list-style-type: none;
   font-weight: bold;
+  padding: 0;
 `;
 
 const Item = styled.li`

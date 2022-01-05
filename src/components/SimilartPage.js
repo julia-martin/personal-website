@@ -120,6 +120,10 @@ const Subtitle = styled.p`
   max-width: 800px;
   padding: 0 50px;
   margin: 0 auto;
+
+  @media (max-width: 375px) {
+    font-size: 1rem;
+  }
 `;
 
 const Content = styled.article`
@@ -170,6 +174,7 @@ const Figcaption = styled.figcaption`
 
 const Video = styled.video`
   margin: 0px 10px;
+  max-width: 95%;
 `;
 
 const GithubWrapper = styled.div`

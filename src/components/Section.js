@@ -54,7 +54,7 @@ const HeadingTitle = styled.span`
 
 const Container = styled.div`
   max-width: 70ch;
-  margin: 0 auto;
+  margin: 0px auto;
 `;
 
 export default Section;

@@ -61,13 +61,9 @@ const Email = styled.p`
   background-color: hsla(321deg 0% 90% / 70%);
   color: ${COLORS.darkBlue};
   position: absolute;
-  top: 10px;
+  top: 30px;
   left: 0;
   right: 0;
-
-  ${EmailBtn}:hover & {
-    color: ${COLORS.offwhite};
-  }
 `;
 
 export default MailButton;

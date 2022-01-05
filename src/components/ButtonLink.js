@@ -28,6 +28,10 @@ const Button = styled.button`
     transform: translateY(-6px) scale(1.05);
     transition: transform 200ms;
   }
+
+  @media (pointer: coarse) {
+    height: var(--min-tap-height);
+  }
 `;
 
 export default ButtonLink;

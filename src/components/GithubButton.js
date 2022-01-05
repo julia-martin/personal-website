@@ -20,6 +20,7 @@ const IconWrapper = styled.figure`
   align-items: center;
   min-width: 44px;
   min-height: 44px;
+  margin: 0px 10px;
 `;
 
 const Icon = styled.img`
