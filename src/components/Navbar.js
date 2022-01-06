@@ -5,10 +5,10 @@ import { COLORS, ANIMATIONS } from '../constants.js';
 const Navbar = () => {
   return (
     <NavList>
-      <a href="#skills"><NavItem>⟶ skills</NavItem></a>
-      <a href="#projects"><NavItem>⟶ projects</NavItem></a>
-      <a href="#about"><NavItem>⟶ about</NavItem></a>
-      <a href="#contact"><NavItem>⟶ contact</NavItem></a>
+      <a href="#skills"><NavItem>skills</NavItem></a>
+      <a href="#projects"><NavItem>projects</NavItem></a>
+      <a href="#about"><NavItem>about</NavItem></a>
+      <a href="#contact"><NavItem>contact</NavItem></a>
     </NavList>
   );
 };
@@ -35,15 +35,16 @@ const NavItem = styled.li`
   padding: 10px 20px;
   margin-top: 50px;
   border: 1px solid transparent;
+  border-bottom: 1px solid ${COLORS.offwhite};
 
   &:hover {
-    border: 1px solid ${COLORS.offwhite};
-    border-radius: 8px;
+    border-bottom: 3px solid ${COLORS.palette['100']};
     color: ${COLORS.offwhite};
   }
 
   @media (max-width: 550px) {
     display: block;
+    max-width: 50%;
     margin: 0;
   }
 `;
