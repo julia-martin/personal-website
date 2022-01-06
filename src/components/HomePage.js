@@ -41,7 +41,7 @@ const HomePage = ({ atTop }) => {
       </Section>
       <Section id="about" title="About Me">
         <figure>
-          <img src="assets/portrait.jpg" alt="Me" />
+          <img src="assets/portrait.jpg" alt="Me" height="250" style={{margin: "0 auto"}} />
         </figure>
         <Paragraph centered={true} >
           I didn't always know I wanted to be a software developer. Before I
