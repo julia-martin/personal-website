@@ -7,12 +7,14 @@ import ProjectSummary from "./ProjectSummary";
 import MailButton from './MailButton';
 import ScrollUpBtn from './ScrollUpBtn';
 import Paragraph from './Paragraph';
+import Hint from './Hint';
 
 const HomePage = ({ atTop }) => {
   return (
     <Layout atTop={atTop}>
       <Hero />
       <Section id="skills" title="Current Skills">
+        <Hint>Click circle to view frameworks and libraries</Hint>
         <Technologies />
       </Section>
       <Section id="projects" title="Past Projects">
