@@ -5,7 +5,6 @@ import ButtonLink from './ButtonLink';
 import GithubButton from './GithubButton';
 
 const ProjectSummary = ({ title, pageUrl, logo, githubLink, isComplete, stack, children }) => {
-  console.log(stack);
   return (
     <Wrapper>
       <h2>

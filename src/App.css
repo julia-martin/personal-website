@@ -38,12 +38,6 @@ a:hover {
   color: #FF8E83;
 }
 
-p {
-  line-height: 2rem;
-  max-width: 60ch;
-  margin: 20px 0px;
-}
-
 @media (prefers-reduced-motion: no-preference) {
   html {
     scroll-behavior: smooth;

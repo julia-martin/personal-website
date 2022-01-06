@@ -6,6 +6,7 @@ import Technologies from "./Technologies";
 import ProjectSummary from "./ProjectSummary";
 import MailButton from './MailButton';
 import ScrollUpBtn from './ScrollUpBtn';
+import Paragraph from './Paragraph';
 
 const HomePage = ({ atTop }) => {
   return (
@@ -23,8 +24,8 @@ const HomePage = ({ atTop }) => {
           isComplete={false}
           stack={[]}
         >
-          <p>Stay tuned for my next project coming in Spring 2022!
-          </p>
+          <Paragraph>Stay tuned for my next project coming in Spring 2022!
+          </Paragraph>
         </ProjectSummary>
         <ProjectSummary
           title="Similart"
@@ -34,28 +35,31 @@ const HomePage = ({ atTop }) => {
           isComplete={true}
           stack={["Flask", "Python", "JavaScript", "D3.js"]}
         >
-          <p>An innovative machine learning art recommendation app that uses a force-directed graph to display recommended and related artworks to the user. It flexibly allows the user to get recommendations in different ways: submit their own image, select a favorite artwork from a curated list, or answer a short quiz.
-          </p>
+          <Paragraph>An innovative machine learning art recommendation app that uses a force-directed graph to display recommended and related artworks to the user. It flexibly allows the user to get recommendations in different ways: submit their own image, select a favorite artwork from a curated list, or answer a short quiz.
+          </Paragraph>
         </ProjectSummary>
       </Section>
       <Section id="about" title="About Me">
-        <p>
+        <figure>
+          <img src="assets/portrait.jpg" alt="Me" />
+        </figure>
+        <Paragraph centered={true} >
           I didn't always know I wanted to be a software developer. Before I
           discovered coding, I worked in e-commerce and then did <b>data science / data analytics</b> at <b>Yelp</b> and <b>Facebook</b>. After some time I realized I didn't have much interest in data science, but when I taught myself Python I realized <b>I love coding</b>. I quit my job at Facebook to study software engineering full-time, and I am so much happier now. I'm addicted to the thrill of solving puzzles and creating
           programs that others can use, and I love the <b>visual</b> aspect of front-end
           development.
-        </p>
-        <p>
+        </Paragraph>
+        <Paragraph centered={true} >
           My first professional experience as a <b>software engineer</b> was at a tech startup called <b>Poindexter</b>, where I did a 2-month contract to build the frontend of their new spreadsheets product with React and Ruby on Rails. I learned so much from my time there, like collaborating with teamates with a 14-hour timezone difference and keeping up with changes in a <b>fast-paced startup environment</b>. Now I'm working on another project, and currently on the lookout for a new opportunity where I'd get to do full-stack software engineering at a forward-thinking tech company.
-        </p>
-        <p>
+        </Paragraph>
+        <Paragraph centered={true} >
           Though I've lived in a few different cities in the past few years, I currently reside in <b>Seattle</b>. I enjoy travel, animals (particularly my pet parrot), arts and culture, learning languages, and health and fitness.
-        </p>
+        </Paragraph>
       </Section>
       <Section id="contact" title="Say Hello">
-        <p style={{textAlign: "center"}}>
+        <Paragraph centered={true} style={{textAlign: "center"}}>
           Have a question, comment, or just wanted to say hi? I'd love to hear from you!
-        </p>
+        </Paragraph>
       <MailButton email="juliadmartin720@gmail.com" />
       </Section>
       <ScrollUpBtn display={atTop ? "none" : "block"}/>
