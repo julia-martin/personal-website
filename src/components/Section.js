@@ -17,6 +17,7 @@ const SectionWrapper = styled.section`
   padding: 10px 50px;
   scroll-snap-align: start;
   background: linear-gradient(180deg,	hsl(235, 90%, 70%), ${COLORS.darkBlue} 6%);
+  position: relative;
 
   &:last-of-type {
     min-height: 80vh;
