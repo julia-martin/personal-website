@@ -4,14 +4,20 @@ import { COLORS } from '../constants.js';
 
 const GithubButton = ({ githubLink }) => {
   return (
-    <a href={githubLink}>
+    <Link href={githubLink}>
       <IconWrapper>
         <Icon src="assets/GitHub-Mark-Light-120px-plus.png" alt="Github Link" />
         <IconCaption>view code</IconCaption>
       </IconWrapper>
-    </a>
+    </Link>
   );
 };
+
+const Link = styled.a`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`;
 
 const IconWrapper = styled.figure`
   display: inline-flex;

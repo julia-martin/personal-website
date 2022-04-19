@@ -5,7 +5,7 @@ export const COLORS = {
   offwhiteTransparent: "hsla(60, 10%, 95%, 75%)",
   primary: "#BE007C", //	hsl(321, 100%, 37%)
   primaryDark: "hsl(321, 100%, 18%)",
-  golden: "ffb56b",
+  golden: "#ffb56b",
   dark: "#1C1F31", //	hsl(231, 27%, 15%)
   darkBlue: "#2d3159",
   palette: {

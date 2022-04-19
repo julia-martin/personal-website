@@ -15,6 +15,7 @@ const SectionWrapper = styled.section`
   min-height: 100vh;
   width: 100%;
   padding: 10px 50px;
+  margin-bottom: 24px;
   scroll-snap-align: start;
   background: linear-gradient(180deg,	hsl(235, 90%, 70%), ${COLORS.darkBlue} 6%);
   position: relative;
@@ -37,15 +38,6 @@ const Heading = styled.h2`
   text-align: center;
   padding: 5px 10px;
   margin: 70px 0px 20px;
-
-  @media (prefers-reduced-motion: no-preference) {
-    will-change: transform;
-    transition: transform 300ms;
-    &:hover {
-      transform: translateY(-5px);
-      transition: transform 200ms;
-    }
-  }
 `;
 
 const HeadingTitle = styled.span`
@@ -54,7 +46,6 @@ const HeadingTitle = styled.span`
 `;
 
 const Container = styled.div`
-  max-width: 70ch;
   margin: 0px auto;
 `;
 

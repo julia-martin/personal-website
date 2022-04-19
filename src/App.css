@@ -23,6 +23,7 @@ body {
   background-color: var(--darkBlue);
   color: var(--offwhite);
   font-family: 'Spartan', sans-serif;
+  font-size: 1.25rem;
 }
 
 b {

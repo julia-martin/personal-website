@@ -7,28 +7,31 @@ import ProjectSummary from "./ProjectSummary";
 import MailButton from './MailButton';
 import ScrollUpBtn from './ScrollUpBtn';
 import Paragraph from './Paragraph';
-import Hint from './Hint';
 
 const HomePage = ({ atTop }) => {
   return (
     <Layout atTop={atTop}>
       <Hero />
       <Section id="skills" title="Current Skills">
-        <Hint>Click circle to view frameworks and libraries</Hint>
         <Technologies />
       </Section>
-      <Section id="projects" title="Past Projects">
+      <Section id="waypost" title="My Most Recent Project">
         <ProjectSummary
-          title="Coming Soon"
-          pageUrl="/"
-          logo="assets/coming-soon.png"
-          githubLink=""
-          isComplete={false}
-          stack={[]}
+          title="Waypost"
+          pageUrl="https://waypost-io.github.io/"
+          logo="assets/waypost/waypost_logo_dark.png"
+          githubLink="https://github.com/waypost-io"
+          isComplete={true}
+          stack={["React", "Node.js", "Express.js", "PostgreSQL"]}
+          imageUrl="assets/waypost/waypost_architecture.png"
+          caption="Architecture of Waypost"
         >
-          <Paragraph>Stay tuned for my next project coming in Spring 2022!
+          <Paragraph>
+            <b>Waypost</b> is an open-source, self-hosted <b>feature flag</b> management platform that specializes in <b>A/B Testing</b>, providing analytical insights for your experiments on both the front-end and back-end.
           </Paragraph>
         </ProjectSummary>
+      </Section>
+      <Section id="projects" title="Past Projects">
         <ProjectSummary
           title="Similart"
           pageUrl="/similart"
@@ -36,8 +39,10 @@ const HomePage = ({ atTop }) => {
           githubLink="https://github.com/julia-martin/similart"
           isComplete={true}
           stack={["Flask", "Python", "JavaScript", "D3.js"]}
+          imageUrl="assets/similart/Similart_sample_output.jpg"
+          caption="Similart Output Example"
         >
-          <Paragraph>An innovative machine learning art recommendation app that uses a force-directed graph to display recommended and related artworks to the user. It flexibly allows the user to get recommendations in different ways: submit their own image, select a favorite artwork from a curated list, or answer a short quiz.
+          <Paragraph>An innovative machine learning art recommendation app that uses KNN and PCA to find similar artworks. It displays recommended and related artworks to the user with a force-directed graph. It allows the user the flexibility to get recommendations in different ways: submit their own image, select a favorite artwork from a curated list, or answer a short quiz.
           </Paragraph>
         </ProjectSummary>
       </Section>
