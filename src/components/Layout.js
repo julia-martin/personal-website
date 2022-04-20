@@ -16,6 +16,7 @@ const Layout = ({ atTop, children}) => {
 
 const Main = styled.main`
   scroll-snap-type: y mandatory;
+  margin-bottom: 40px;
 `;
 
 export default Layout;

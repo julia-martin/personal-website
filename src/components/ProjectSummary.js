@@ -81,6 +81,7 @@ const Figure = styled.figure`
   padding: 20px;
   margin: 20px 0px;
   border-radius: 20px;
+  max-width: 1000px;
 `;
 
 const Figcaption = styled.figcaption`

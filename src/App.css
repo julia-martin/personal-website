@@ -35,6 +35,11 @@ a {
   color: hsl(60, 10%, 95%);
 }
 
+#about a {
+  color: #FF8E83;
+  text-decoration: underline;
+}
+
 @media (prefers-reduced-motion: no-preference) {
   html {
     scroll-behavior: smooth;

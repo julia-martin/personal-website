@@ -42,7 +42,7 @@ const HomePage = ({ atTop }) => {
           imageUrl="assets/similart/Similart_sample_output.jpg"
           caption="Similart Output Example"
         >
-          <Paragraph>An innovative machine learning art recommendation app that uses KNN and PCA to find similar artworks. It displays recommended and related artworks to the user with a force-directed graph. It allows the user the flexibility to get recommendations in different ways: submit their own image, select a favorite artwork from a curated list, or answer a short quiz.
+          <Paragraph>An innovative <b>machine learning art recommendation</b> app that uses KNN and PCA to find similar artworks. It displays recommended and related artworks to the user with a force-directed graph. It allows the user the flexibility to get recommendations in different ways: submit their own image, select a favorite artwork from a curated list, or answer a short quiz.
           </Paragraph>
         </ProjectSummary>
       </Section>
@@ -56,7 +56,7 @@ const HomePage = ({ atTop }) => {
           discovered coding, I worked in e-commerce and then did <b>data science / data analytics</b> at <b>Yelp</b> and <b>Facebook</b>. One day I decided to teach myself Python so I could do more at my job at Yelp, and that's when I realized <b>I love coding</b>. I started taking more courses on computer science and software engineering in my free time after that. I realized that I love problem-solving and creating delightful experiences for users. Finally, I decided to make a total career switch out of data science, so I quit my job at Facebook to study software engineering full-time through Launch School, an online mastery-based learning school for software engineering.
         </Paragraph>
         <Paragraph centered={true}>
-          Fast-forward to today, and I've just completed my Capstone project, an <b>A/B testing and feature flag management platform</b> called Waypost. I worked extremely hard on it and I'm quite proud of it. Shameless plug to check out the writeup on the Waypost website!
+          Fast-forward to today, and I've just completed my Capstone project, an <b>A/B testing and feature flag management platform</b> called Waypost. I worked extremely hard on it and I'm quite proud of it. Shameless plug to check out the writeup on the Waypost <a href="https://waypost-io.github.io/">website</a>!
         </Paragraph>
         <img src="assets/me.jpg" alt="Me" style={{width: "30%", float: "right", margin: "30px"}} />
         <Paragraph centered={true} >

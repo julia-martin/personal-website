@@ -2,7 +2,7 @@ import React from 'react';
 import styled from "styled-components/macro";
 import Layout from './Layout';
 import GithubButton from './GithubButton';
-import { COLORS, ANIMATIONS, GRADIENT } from '../constants.js';
+import { COLORS, GRADIENT } from '../constants.js';
 
 const SimilartPage = () => {
   return (
@@ -78,10 +78,6 @@ const Logo = styled.img`
   width: 100px;
   z-index: 2;
 
-  @media (prefers-reduced-motion: no-preference) {
-    animation: ${ANIMATIONS.slideDown} 700ms both;
-  }
-
   @media (max-width: 450px) {
     position: static;
     margin: 60px auto 10px;
@@ -100,11 +96,6 @@ const Title = styled.h1`
   letter-spacing: 0.3rem;
   text-transform: uppercase;
   text-align: center;
-
-  @media (prefers-reduced-motion: no-preference) {
-    will-change: transform;
-    animation: ${ANIMATIONS.slideDown} 700ms both;
-  }
 
   @media (max-width: 550px) {
     font-size: 2rem;
