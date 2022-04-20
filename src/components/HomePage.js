@@ -46,20 +46,22 @@ const HomePage = ({ atTop }) => {
           </Paragraph>
         </ProjectSummary>
       </Section>
+
       <Section id="about" title="About Me">
         <figure>
           <img src="assets/portrait.jpg" alt="Me" height="250" style={{margin: "0 auto"}} />
         </figure>
         <Paragraph centered={true} >
-          I didn't always know I wanted to be a software developer, but <b>I've always loved learning</b>. Before I
-          discovered coding, I worked in e-commerce and then did <b>data science / data analytics</b> at <b>Yelp</b> and <b>Facebook</b>. One day I decided to teach myself Python so I could do more at my job at Yelp, and that's when I realized <b>I love coding</b>. I started taking more courses on computer science and software engineering in my free time after that. Finally, I decided to make a total career switch out of data science, so I quit my job at Facebook to study software engineering full-time, and I am so much happier now. Now, I get to have fun solving puzzles and creating
-          programs that others can use, and I love that I get to use the creative side of my brain for front-end development.
+          I didn't always know I wanted to be a software developer, but I've always <b>loved learning</b>. Before I
+          discovered coding, I worked in e-commerce and then did <b>data science / data analytics</b> at <b>Yelp</b> and <b>Facebook</b>. One day I decided to teach myself Python so I could do more at my job at Yelp, and that's when I realized <b>I love coding</b>. I started taking more courses on computer science and software engineering in my free time after that. I realized that I love problem-solving and creating delightful experiences for users. Finally, I decided to make a total career switch out of data science, so I quit my job at Facebook to study software engineering full-time through Launch School, an online mastery-based learning school for software engineering.
+        </Paragraph>
+        <Paragraph centered={true}>
+          Fast-forward to today, and I've just completed my Capstone project, an <b>A/B testing and feature flag management platform</b> called Waypost. I worked extremely hard on it and I'm quite proud of it. Shameless plug to check out the writeup on the Waypost website!
         </Paragraph>
         <img src="assets/me.jpg" alt="Me" style={{width: "30%", float: "right", margin: "30px"}} />
         <Paragraph centered={true} >
-          My first professional experience as a <b>software engineer</b> was at a tech startup called <b>Poindexter</b>, where I did a 2-month contract to build the frontend of their new spreadsheets product with React and Ruby on Rails. I learned so much from my time there, like collaborating with teamates with a 14-hour timezone difference and keeping up with huge changes to the codebase in a <b>fast-paced startup environment</b>. Currently I'm working on a new open-source project, and currently on the lookout for a new opportunity where I'd get to do full-stack software engineering at a forward-thinking tech company.
+          In addition to my projects, I also have professional experience as a <b>software engineer</b> at a tech startup called <b>Poindexter</b>, where I did a 2-month contract to build the frontend of their new spreadsheets product with React and Ruby on Rails. I learned so much from my time there, like collaborating with teamates with a 14-hour timezone difference and keeping up with huge changes to the codebase in a <b>fast-paced startup environment</b>.
         </Paragraph>
-
         <Paragraph centered={true} >
           Though I've lived in a few different cities in the past few years, I currently reside in <b>Seattle</b>. Aside from learning, I enjoy traveling, spending time with my bird, learning languages, reading, arts and culture, and health and fitness.
         </Paragraph>
