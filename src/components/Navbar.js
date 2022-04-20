@@ -5,9 +5,9 @@ import { COLORS, ANIMATIONS } from '../constants.js';
 const Navbar = () => {
   return (
     <NavList>
-      <a href="#skills"><NavItem>skills</NavItem></a>
-      <a href="#projects"><NavItem>projects</NavItem></a>
       <a href="#about"><NavItem>about</NavItem></a>
+      <a href="#projects"><NavItem>projects</NavItem></a>
+      <a href="#skills"><NavItem>skills</NavItem></a>
       <a href="#contact"><NavItem>contact</NavItem></a>
     </NavList>
   );

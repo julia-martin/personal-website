@@ -12,41 +12,6 @@ const HomePage = ({ atTop }) => {
   return (
     <Layout atTop={atTop}>
       <Hero />
-      <Section id="skills" title="Skills">
-        <Technologies />
-      </Section>
-      <Section id="waypost" title="My Most Recent Project">
-        <ProjectSummary
-          title="Waypost"
-          pageUrl="https://waypost-io.github.io/"
-          logo="assets/waypost/waypost_logo_dark.png"
-          githubLink="https://github.com/waypost-io"
-          isComplete={true}
-          stack={["React", "Node.js", "Express.js", "PostgreSQL"]}
-          imageUrl="assets/waypost/waypost_architecture.png"
-          caption="Architecture of Waypost"
-        >
-          <Paragraph>
-            <b>Waypost</b> is an open-source, self-hosted <b>feature flag</b> management platform that specializes in <b>A/B Testing</b>, providing analytical insights for your experiments on both the front-end and back-end.
-          </Paragraph>
-        </ProjectSummary>
-      </Section>
-      <Section id="projects" title="Past Projects">
-        <ProjectSummary
-          title="Similart"
-          pageUrl="/similart"
-          logo="assets/similart/Similart_logo.png"
-          githubLink="https://github.com/julia-martin/similart"
-          isComplete={true}
-          stack={["Flask", "Python", "JavaScript", "D3.js"]}
-          imageUrl="assets/similart/Similart_sample_output.jpg"
-          caption="Similart Output Example"
-        >
-          <Paragraph>An innovative <b>machine learning art recommendation</b> app that uses KNN and PCA to find similar artworks. It displays recommended and related artworks to the user with a force-directed graph. It allows the user the flexibility to get recommendations in different ways: submit their own image, select a favorite artwork from a curated list, or answer a short quiz.
-          </Paragraph>
-        </ProjectSummary>
-      </Section>
-
       <Section id="about" title="About Me">
         <figure>
           <img src="assets/portrait.jpg" alt="Me" height="250" style={{margin: "0 auto"}} />
@@ -65,7 +30,40 @@ const HomePage = ({ atTop }) => {
         <Paragraph centered={true} >
           Though I've lived in a few different cities in the past few years, I currently reside in <b>Seattle</b>. Aside from learning, I enjoy traveling, spending time with my bird, learning languages, reading, arts and culture, and health and fitness.
         </Paragraph>
-
+      </Section>
+      <Section id="projects" title="My Most Recent Project">
+        <ProjectSummary
+          title="Waypost"
+          pageUrl="https://waypost-io.github.io/"
+          logo="assets/waypost/waypost_logo_dark.png"
+          githubLink="https://github.com/waypost-io"
+          isComplete={true}
+          stack={["React", "Node.js", "Express.js", "PostgreSQL"]}
+          imageUrl="assets/waypost/waypost_architecture.png"
+          caption="Architecture of Waypost"
+        >
+          <Paragraph>
+            <b>Waypost</b> is an open-source, self-hosted <b>feature flag</b> management platform that specializes in <b>A/B Testing</b>, providing analytical insights for your experiments on both the front-end and back-end.
+          </Paragraph>
+        </ProjectSummary>
+      </Section>
+      <Section id="projects2" title="Past Projects">
+        <ProjectSummary
+          title="Similart"
+          pageUrl="/similart"
+          logo="assets/similart/Similart_logo.png"
+          githubLink="https://github.com/julia-martin/similart"
+          isComplete={true}
+          stack={["Flask", "Python", "JavaScript", "D3.js"]}
+          imageUrl="assets/similart/Similart_sample_output.jpg"
+          caption="Similart Output Example"
+        >
+          <Paragraph>An innovative <b>machine learning art recommendation</b> app that uses KNN and PCA to find similar artworks. It displays recommended and related artworks to the user with a force-directed graph. It allows the user the flexibility to get recommendations in different ways: submit their own image, select a favorite artwork from a curated list, or answer a short quiz.
+          </Paragraph>
+        </ProjectSummary>
+      </Section>
+      <Section id="skills" title="Skills">
+        <Technologies />
       </Section>
       <Section id="contact" title="Say Hello">
         <Paragraph centered={true} style={{textAlign: "center"}}>
