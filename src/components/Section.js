@@ -43,11 +43,11 @@ const Heading = styled.h2`
 const HeadingTitle = styled.span`
   border: 2px solid ${COLORS.offwhite};
   padding: 5px 10px;
-  text-align: center;
 `;
 
 const Container = styled.div`
   margin: 0px auto;
+  overflow: auto;
 `;
 
 export default Section;
