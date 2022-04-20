@@ -12,7 +12,7 @@ const HomePage = ({ atTop }) => {
   return (
     <Layout atTop={atTop}>
       <Hero />
-      <Section id="skills" title="Current Skills">
+      <Section id="skills" title="Skills">
         <Technologies />
       </Section>
       <Section id="waypost" title="My Most Recent Project">
@@ -71,7 +71,7 @@ const HomePage = ({ atTop }) => {
         <Paragraph centered={true} style={{textAlign: "center"}}>
           Have a question, comment, or just wanted to say hi? I'd love to hear from you!
         </Paragraph>
-      <MailButton email="juliadmartin720@gmail.com" />
+        <MailButton email="juliadmartin720@gmail.com" />
       </Section>
       <ScrollUpBtn display={atTop ? "none" : "block"}/>
     </Layout>

@@ -18,7 +18,7 @@ const ProjectSummary = ({ title, pageUrl, logo, githubLink, stack, children, ima
         </Main>
         <Figure>
           <Figcaption>{caption}</Figcaption>
-          <img src={imageUrl} alt={caption} />
+          <Img src={imageUrl} alt={caption} />
         </Figure>
         <Links>
           <ButtonLink href={pageUrl} text="Read the Story" />
@@ -36,6 +36,7 @@ const Wrapper = styled.article`
   padding: 30px 0;
   margin: 0 auto;
   display: flex;
+  justify-content: center;
 
   &:not(:first-of-type) {
     border-top: 0.5px solid ${COLORS.offwhite};
@@ -46,12 +47,17 @@ const Content = styled.div`
   display: inline-flex;
   flex-direction: column;
   flex-wrap: wrap;
+  justify-content: center;
   align-items: center;
 `;
 
 const Main = styled.div`
   display: inline-flex;
   align-items: center;
+
+  @media (max-width: 600px) {
+    flex-direction: column;
+  }
 `;
 
 const ProjectTitle = styled.a`
@@ -79,13 +85,18 @@ const Links = styled.div`
 const Figure = styled.figure`
   background-color: ${COLORS.offwhite};
   padding: 20px;
-  margin: 20px 0px;
+  margin: 20px 5px;
   border-radius: 20px;
-  max-width: 1000px;
+  max-width: min(80%, 1000px);
 `;
 
 const Figcaption = styled.figcaption`
-    color: ${COLORS.darkBlue};
+  color: ${COLORS.darkBlue};
+`;
+
+const Img = styled.img`
+    width: 100%;
+    height: auto;
 `;
 
 const StackSection = styled.div`
