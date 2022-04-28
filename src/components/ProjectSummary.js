@@ -10,18 +10,18 @@ const ProjectSummary = ({ title, pageUrl, logo, githubLink, stack, children, ima
     <Wrapper>
       <Content>
         <Main>
-          <ProjectLogo src={logo} alt={`${title} logo`} />
+          {logo && <ProjectLogo src={logo} alt={`${title} logo`} />}
           <div>
             <ProjectTitle href={pageUrl}>{title}</ProjectTitle>
             {children}
           </div>
         </Main>
         <Figure>
-          <Figcaption>{caption}</Figcaption>
           <Img src={imageUrl} alt={caption} />
+          <Figcaption>{caption}</Figcaption>
         </Figure>
         <Links>
-          <ButtonLink href={pageUrl} text="Read the Story" />
+          {pageUrl && <ButtonLink href={pageUrl} text="Read the Story" />}
           <GithubButton githubLink={githubLink} />
         </Links>
         <StackSection>
@@ -83,20 +83,22 @@ const Links = styled.div`
 `;
 
 const Figure = styled.figure`
-  background-color: ${COLORS.offwhite};
   padding: 20px;
   margin: 20px 5px;
   border-radius: 20px;
   max-width: min(80%, 1000px);
+  max-height: 80vh;
 `;
 
 const Figcaption = styled.figcaption`
-  color: ${COLORS.darkBlue};
+  color: ${COLORS.offwhite};
+  font-size: 12px;
+  margin-top: 12px;
 `;
 
 const Img = styled.img`
-    width: 100%;
-    height: auto;
+    height: 90%;
+    width: auto;
 `;
 
 const StackSection = styled.div`

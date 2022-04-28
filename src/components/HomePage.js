@@ -37,13 +37,12 @@ const HomePage = ({ atTop }) => {
           pageUrl="https://waypost-io.github.io/"
           logo="assets/waypost/waypost_logo_dark.png"
           githubLink="https://github.com/waypost-io"
-          isComplete={true}
           stack={["React", "Node.js", "Express.js", "PostgreSQL"]}
-          imageUrl="assets/waypost/waypost_architecture.png"
+          imageUrl="assets/waypost/architecture_with_bg.png"
           caption="Architecture of Waypost"
         >
           <Paragraph>
-            <b>Waypost</b> is an open-source, self-hosted <b>feature flag</b> management platform that specializes in <b>A/B Testing</b>, providing analytical insights for your experiments on both the front-end and back-end.
+            <b>Waypost</b> is an open-source, self-hosted <b>feature flag</b> management platform that specializes in <b>A/B Testing</b>, providing analytical insights for experiments on both the front-end and back-end.
           </Paragraph>
         </ProjectSummary>
       </Section>
@@ -53,13 +52,32 @@ const HomePage = ({ atTop }) => {
           pageUrl="/similart"
           logo="assets/similart/Similart_logo.png"
           githubLink="https://github.com/julia-martin/similart"
-          isComplete={true}
           stack={["Flask", "Python", "JavaScript", "D3.js"]}
           imageUrl="assets/similart/Similart_sample_output.jpg"
           caption="Similart Output Example"
         >
           <Paragraph>An innovative <b>machine learning art recommendation</b> app that uses KNN and PCA to find similar artworks. It displays recommended and related artworks to the user with a force-directed graph. It allows the user the flexibility to get recommendations in different ways: submit their own image, select a favorite artwork from a curated list, or answer a short quiz.
           </Paragraph>
+        </ProjectSummary>
+        <ProjectSummary
+          title="HookTester"
+          githubLink="https://github.com/calebrs/HookTester"
+          stack={["JavaScript", "Node.js", "React"]}
+          imageUrl="assets/hooktester/hooktester_home.jpg"
+          caption="Start page"
+        >
+          <Paragraph>
+            A RequestBin-like tool for testing and debugging webhooks that provides a custom URL endpoint and inspector interface
+          </Paragraph>
+        </ProjectSummary>
+        <ProjectSummary
+          title="Wello"
+          githubLink="https://github.com/seanrichardson95/Wello"
+          stack={["JavaScript", "Node.js", "React", "Redux"]}
+          imageUrl="assets/wello/board.png"
+          caption=""
+        >
+          <Paragraph>A Trello-like Kanban tool to manage tasks</Paragraph>
         </ProjectSummary>
       </Section>
       <Section id="skills" title="Skills">
