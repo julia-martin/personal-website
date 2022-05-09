@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components/macro';
-import { COLORS, FONTS } from '../constants.js';
+import { COLORS } from '../constants.js';
 
 const Section = ({ id, title, children, colorTheme}) => {
   return (

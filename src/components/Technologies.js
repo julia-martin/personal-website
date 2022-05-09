@@ -1,7 +1,6 @@
 import React from "react";
 import styled from "styled-components/macro";
 import Skill from "./Skill";
-import { FONTS } from '../constants';
 
 const imgPath = "/assets/logos/";
 const Technologies = () => {
