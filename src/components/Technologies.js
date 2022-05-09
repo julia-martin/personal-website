@@ -43,11 +43,9 @@ const Wrapper = styled.div`
   text-align: center;
 `;
 
-const Header = styled.h1`
+const Header = styled.h3`
   text-transform: uppercase;
   margin-top: 24px;
-  font-family: ${FONTS.strong};
-  letter-spacing: 0.5rem;
 `;
 
 const SkillGroup = styled.div`

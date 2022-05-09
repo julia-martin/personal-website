@@ -30,10 +30,9 @@ const SectionWrapper = styled.section`
 `;
 
 const Heading = styled.h2`
+  text-transform: uppercase;
   color: ${COLORS.offwhite};
-  font-family: ${FONTS.strong};
-  font-size: ${32/16}rem;
-  font-weight: 300;
+  font-size: ${24/16}rem;
   letter-spacing: 0.4rem;
   text-align: center;
   padding: 5px 10px;
@@ -42,7 +41,7 @@ const Heading = styled.h2`
 
 const HeadingTitle = styled.span`
   border: 2px solid ${COLORS.offwhite};
-  padding: 5px 10px;
+  padding: 10px 10px 5px;
 `;
 
 const Container = styled.div`
