@@ -38,11 +38,11 @@ const Name = styled.h1`
   text-transform: uppercase;
   letter-spacing: 0.5rem;
   padding-left: 10px;
-  filter: drop-shadow(0px 1px 2px hsl(0deg 0% 0% / 0.1));
 
-  @supports (-webkit-text-stroke: 0.3px black) {
-    -webkit-text-stroke: 0.3px ${COLORS.darkBlue};
+  @supports (-webkit-text-stroke: 1px black) {
+    -webkit-text-stroke: 1px ${COLORS.darkBlue};
     -webkit-text-fill-color: white;
+    -webkit-text-stroke-color: ${COLORS.darkBlue};
   }
 
   @media (max-width: 375px) {
