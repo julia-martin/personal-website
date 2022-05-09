@@ -18,7 +18,7 @@ const Button = styled.button`
   border: none;
   border-radius: 8px;
   padding: 12px 16px 12px;
-  margin: 15px 10px 15px 0px;
+  margin: 15px 24px 15px 0px;
   box-shadow: 1px 2px 4px hsl(0deg 0% 0% / 0.5);
   transition: transform 400ms;
   will-change: transform;

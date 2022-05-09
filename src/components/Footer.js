@@ -11,6 +11,7 @@ const Footer = () => {
       <SiteLinks>
         <Item><Link href="https://github.com/julia-martin">github</Link></Item>
         <Item><Link href="https://www.linkedin.com/in/juliadmartin/">linkedin</Link></Item>
+        <Item><Link href="/resume.pdf">resume</Link></Item>
       </SiteLinks>
     </FooterWrapper>
   );

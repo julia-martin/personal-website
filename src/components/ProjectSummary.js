@@ -83,6 +83,8 @@ const Links = styled.div`
 `;
 
 const Figure = styled.figure`
+  display: flex;
+  flex-direction: column;
   padding: 20px;
   margin: 20px 5px;
   border-radius: 20px;
@@ -97,8 +99,8 @@ const Figcaption = styled.figcaption`
 `;
 
 const Img = styled.img`
-    height: 90%;
-    width: auto;
+    width: 90%;
+    justify-self: center;
 `;
 
 const StackSection = styled.div`
@@ -109,9 +111,6 @@ const StackSection = styled.div`
 
 const StackItem = styled.div`
   display: inline-block;
-  border: 1px solid ${COLORS.palette['100']};
-  border-top-left-radius: 99999px;
-  border-top-right-radius: 99999px;
   color: ${COLORS.palette['100']};
   padding: 16px 16px 4px;
   margin: 5px 20px;
